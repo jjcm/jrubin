@@ -687,3 +687,8 @@ h3 {
     color: #ddd;
     letter-spacing: 1px;
 }
+.resumeBlock {
+    padding: 20px;
+    float: left;
+    width: 280px;
+}

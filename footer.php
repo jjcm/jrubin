@@ -39,16 +39,19 @@ body {
 <div id="navigation">
     <ul>
         <li>
-            <a href="portfolio">Portfolio</a>
+            <a href="/portfolio">Portfolio</a>
         </li>
         <li>
-            <a href="statement">Artist's Statement</a>
+            <a href="/statement">Artist's Statement</a>
+        </li>
+        <li>
+            <a href="/resume">Resume</a>
         </li>
         <li>
             <a href="mailto:jenerubin@gmail.com">Contact</a>
         </li>
         <li>
-            <a href="blog">Blog</a>
+            <a href="/blog">Blog</a>
         </li>
     </ul>
 </div>
