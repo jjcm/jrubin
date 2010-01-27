@@ -1,3 +1,4 @@
+/*
 * {
     margin: 0px;
     padding: 0px;
@@ -48,11 +49,7 @@ blockquote{
     padding-left: 1em;
 }
 
-/*-----------------------------------------------------------------------------------------------
-Layout / Base Page Styling
------------------------------------------------------------------------------------------------*/
     body{
-        background: #D8D8D8;
         color: #404040;
         font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Arial, sans-serif;
         font-size: 11px;
@@ -240,7 +237,6 @@ ul.dates, ul.counts{
     display: none;
 }
 
-/* This class sets the width and position for all rows */
 .inside{
     width:80%;
     min-width:65em;
@@ -322,9 +318,6 @@ ul.dates, ul.counts{
     text-decoration: none;
 }
 
-/*-----------------------------------------------------------------------------------------------
-Ancillary Items
------------------------------------------------------------------------------------------------*/
     #ancillary{
         padding: 2em 0px 0px 0px;
 }
@@ -422,20 +415,6 @@ Ancillary Items
     font-weight: bold;
 }
 
-/*-----------------------------------------------------------------------------------------------
-Foooter
------------------------------------------------------------------------------------------------*/
-    #footer{
-        clear: both;
-        color: #6C6C6C;
-        margin: 2em 0px 3em 0px;
-}
-
-#footer .inside{
-    background: url(../images/footer_black.gif) 50% 0 repeat-x;
-    padding: 1em 0px;
-}
-
 #footer p{
     font-size: 0.95em;
     margin: 0px;
@@ -459,9 +438,6 @@ Foooter
     float: left;
 }
 
-/*-----------------------------------------------------------------------------------------------
-Header
------------------------------------------------------------------------------------------------*/
     #header{
         background: #FFFFFF;
 }
@@ -489,9 +465,6 @@ Header
     padding: 1em 0px;
 }
 
-/*-----------------------------------------------------------------------------------------------
-Live Search
------------------------------------------------------------------------------------------------*/
     #live-search{
         -moz-opacity: 0.4;
         position: absolute;
@@ -514,9 +487,6 @@ Live Search
     margin: 1em 0px 0px 0px;
 }
 
-/*-----------------------------------------------------------------------------------------------
-Primary Items
------------------------------------------------------------------------------------------------*/
     #primary{
         background: #FFFFFF;
         color: #7F7F7F;
@@ -668,11 +638,52 @@ Primary Items
     background: #202020;
 }
 
-/*-----------------------------------------------------------------------------------------------
-Secondary Items
------------------------------------------------------------------------------------------------*/
     #secondary{
         background: #F3F3F3;
         border-top: 1px solid #E3E3E3;
         padding: 1px 2em;
+}
+    */
+body {
+    color: #b3b3b3;
+    font-family: "Helvetica", sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin: 0px;
+    background-color: #0d0d0d;
+}
+
+a {
+    color: #ddd;
+    border-bottom: 1px dotted #666;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+a:hover {
+    border-bottom: 1px dotted #888;
+    color: #fff;
+}
+li a{
+    border-bottom: none;
+}
+li a:hover{
+    border-bottom: none;
+}
+#name h1{
+    font-size: 40px;
+    font-family: "Adobe Caslon Pro", Georgia, serif;
+    padding-left: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+h2 {
+    font-family: "Adobe Caslon Pro", Georgia, serif;
+    color: #ddd;
+    letter-spacing: 1px;
+    font-size: 28px;
+}
+h3 {
+    font-family: "Adobe Caslon Pro", Georgia, serif;
+    color: #ddd;
+    letter-spacing: 1px;
 }

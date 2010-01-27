@@ -1,38 +1,26 @@
 <?php get_header(); ?>
+<style type="text/css">
+    #primary { height: auto; }
+    #secondary{
+        padding: 10px;
+    }
+    #name {
+        padding-left: 10px;
+    }
+</style>
+
+<div id="name">
+    <a class="noEffects" href="/"><h1><?php bloginfo('name'); ?></h1></a>
+</div>
+
 <div id="primary" class="single-post"> 
   <div class="inside"> 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="primary"> 
-      <h1>
+      <h2>
         <?php the_title(); ?>
-      </h1>
+      </h2>
       <?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
-    </div>
-    <hr class="hide" />
-    <div class="secondary"> 
-      <h2>About this entry</h2>
-      <div class="featured"> 
-        <p>You&rsquo;re currently reading &ldquo;
-          <?php the_title(); ?>
-          ,&rdquo; an entry on 
-          <?php bloginfo('name'); ?>
-        </p>
-        <dl>
-          <dt>Published:</dt>
-          <dd>
-            <?php the_time('n.j.y') ?>
-            / 
-            <?php the_time('ga') ?>
-          </dd>
-        </dl>
-        <dl>
-          <dt>Category:</dt>
-          <dd>
-            <?php the_category(', ') ?>
-          </dd>
-        </dl>
-        <?php edit_post_link('Edit this entry.', '<dl><dt>Edit:</dt><dd> ', '</dd></dl>'); ?>
-      </div>
     </div>
     <div class="clear"></div>
   </div>
@@ -67,5 +55,3 @@
     <?php endif; ?>
   </div>
 </div>
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>

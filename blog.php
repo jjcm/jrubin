@@ -1,7 +1,27 @@
+<?php
+/*
+Template Name: Blog
+*/
+?>
+<style type="text/css">
+    #blog{
+        width: 700px;
+        float: left;
+    }
+    #sidebar {
+        width: 220px;
+        float: right;
+    }
+    #primary {
+        padding-top: 30px;
+    }
+
+</style>
+
+
 <?php get_header(); ?>
-<?php //echo nggShowGallery('1'); ?>
 	<div id="primary" class="twocol-stories">
-		<div class="inside">
+		<div id="blog">
 			<?php
 				// Here is the call to only make two posts show up on the homepage REGARDLESS of your options in the control panel
 				query_posts('showposts=2');
@@ -29,11 +49,11 @@
 				
 			<div class="clear"></div>
 		</div>
+<?php get_sidebar(); ?>
 	</div>
 	<!-- [END] #primary -->
 
 
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

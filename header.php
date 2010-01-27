@@ -20,16 +20,16 @@
 	#footer .inside{ background:url(<?php bloginfo('stylesheet_directory'); ?>/images/footer_black.gif) 50% 0 repeat-x; ?>
 </style>
 <?php wp_head(); ?>
+<style type="text/css">
+    #primary {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 500px;
+        position: relative;
+        top: -10px;
+    }
+</style>
 </head>
 <body>
-<div id="header"> 
-  <div class="inside"> 
-    <h2><a href="<?php echo get_settings('home'); ?>/"> 
-      <?php bloginfo('name'); ?>
-      </a></h2>
-    <p class="description"> 
-      <?php bloginfo('description'); ?>
-    </p>
-  </div>
-</div>
 <!-- [END] #header -->

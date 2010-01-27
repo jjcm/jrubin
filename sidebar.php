@@ -1,17 +1,7 @@
-<hr class="hide" />
-<div id="ancillary"> 
+<div id="sidebar"> 
   <div class="inside"> 
-    <div class="block first"> 
-      <h2>About</h2>
-      <?php query_posts('pagename=about'); ?>
-      <?php if (have_posts()) : ?>
-      <?php while (have_posts()) : the_post(); ?>
-      <?php the_content(); ?>
-      <?php endwhile; ?>
-      <?php endif; ?>
-    </div>
     <div class="block"> 
-      <h2>Recently</h2>
+      <h3>Recently Posted</h3>
       <ul class="dates">
         <?php
 						// I love Wordpress so
@@ -24,12 +14,6 @@
           <?php the_title() ?>
           </a></li>
         <?php endwhile; endif; ?>
-      </ul>
-    </div>
-    <div class="block"> 
-      <h2>Categories</h2>
-      <ul class="counts">
-        <?php wp_list_cats('sort_column=name&optioncount=1&hierarchical=0'); ?>
       </ul>
     </div>
     <div class="clear"></div>
